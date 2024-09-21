@@ -1,0 +1,249 @@
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100%;
+    margin-right: 10px;
+}
+
+header nav {
+    position: relative;
+    left: 27rem;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 42px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: thin;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+header nav ul li a.active {
+    /* color: orange; */
+    background-color: #f0390f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;  
+    padding: 0px 40px;
+    background-color: #f9f9f9;
+}
+.hero-text {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    padding: 8rem 0 0 5rem;
+  }
+.hero-text h1 {
+    font-size: 3rem;
+    color: #333;
+    line-height: 1.2;
+    width: 45%;
+}
+.hero-text img {
+    margin-bottom: 35px;
+}
+.hero-text p {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.hero-image img {
+    width: 800px;
+}
+
+.classes {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.classes h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.classes p {
+    font-weight: 400;
+    /* margin-bottom: 10px; */
+}
+
+.class-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.class-box {
+    background-color: #f0390f;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px 20px;
+}
+.box-bg {
+    background-color: #3e0bce;
+}
+.class-box .icon {
+    display: inline-block;
+}
+.class-box h3 {
+    margin-bottom: 10px;
+}
+
+.class-box a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about{
+    width: 100%;
+    background-image: url("src/about_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.about-content{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding: 200px 0 0 160px;
+}
+.about-content h1{
+    margin-bottom: 1rem;
+    font-size: 38px;
+    color: white;
+    width: 45%;
+}
+.about-img{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+
+    
+}
+.about-img img{
+    display: inline-block;
+    width: 95%;
+    margin-top: 20%;
+    
+}
+.about-content p{
+    color: white;
+    font-size: smaller;
+    line-height: 2;
+    width: 72%;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    header {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    header nav {
+        position: relative;
+        left: 27rem;
+        display: none;
+      }
+      header .logo img {
+        width: 50%;
+        margin: 0px auto;
+      }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+    }
+    .hero-text h1 {
+        width: 100%;
+    }
+    .hero-text img {
+       margin: 10px auto;
+      }
+    .hero-image img {
+        width: 100%;
+    }
+
+    .class-container {
+        flex-direction: column;
+    }
+
+    .class-box {
+        width: 100%;
+    }
+    .class-box {
+        margin: 10px auto;
+    }
+    .about-content{
+        display: block;
+        width: 100%;
+        padding: 28px;
+    }
+    .about-content h1{
+        margin-bottom: 1rem;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    .about-content p{
+        color: white;
+        font-size: smaller;
+        line-height: 2;
+        text-align: center;
+        width: 100%;
+
+    }
+    .about-img {
+        width: 90%;
+        text-align: center;
+      }
+    .about-img img{
+        display: inline-block;
+        width: 95%;
+        margin-top: 20%;
+        
+    }
+}
